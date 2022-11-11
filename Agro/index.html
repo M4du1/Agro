@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>AgroFresh</title>
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link rel="shortcut icon" href="./icons/icon.png">
+</head>
+<body>
+    <!--Start of Nav Bar-->
+<section id="nav">
+    <div class="nav">
+        <h1><a href="index.html">AgroFresh</a></h1>
+        <ul type ="none">
+            <li><a href="#nav">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <form>
+        <input type="text" placeholder="search...">
+        <i class="fa fa-search"></i>
+        </form>  
+     </div>
+</section>
+ <!--End of Nav Bar-->
+
+ <!--Start of Info Nav-->
+ <div class="info-nav">
+    <marquee behaviour="alternate">
+        <i class="fa fa-phone"></i>
+        <label>Call Us : +233 20 953 6413 </label>
+        <i class="fa fa-envelope"></i>
+        <label>Email Us: </label><a href="#">info@agrofresh.com</a>
+        <i class="fa fa-location-dot"></i>
+        <label>Location: Ho, Volta Region.</label>  
+    </marquee>
+ </div>
+
+ <!--End of Info Nav-->
+ 
+ <!--slide show container-->
+<div class="slideshow-container">
+    <!--full width images with numbers and caption-->
+    <div class="mySlides fade">
+        <img src="./imgs/hero.jpg" style="width:100%">
+    </div>
+   
+    <div class="mySlides fade">
+        <img src="./imgs/hero1.jpg" style="width:100%">
+    </div>
+   
+    <div class="mySlides fade">
+        <img src="./imgs/hero7.jpg" style="width:100%">
+    </div>
+    
+    <!--Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!--End of Image Slider-->
+
+<!--Start of About-->
+<section id="about">
+    <div class="about">
+        <div class="about-pic">
+            <img src="./imgs/about-pic.jpg" alt="#">
+        </div>
+        <div class="about-text">
+            <h2>ABOUT</h2>
+            <p class="p1">AgroFresh,an online platform for your fresh food stuffs straight from the farmlands. We serve as a direct link between the farmer and the buyers.</p>
+            <p class="p2">We are the new evolution in Agric-Marketing.</p>
+            <ul>
+                <li>Daily Fresh Farm Produce</li>
+                <li>Best Customer Service</li>
+                <li>Secure & Fast Payment Platform</li>
+                <li>24/7 Online Service</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--End of About-->
+
+<!--Strt of Service-->
+<section id="service">
+    <div class="service">
+        <h3>SERVICES</h3>
+    <div class="service2" >
+        <div class="shopping">
+            <i class="fa fa-cart-shopping"></i>
+            <button class="buy-btn">Buy</button>
+        </div>
+    <div class="selling">
+        <i class="fa fa-money-bill"></i>
+        <button class="sell-btn">Sell</button>
+        </div>
+    <div class="transport">
+        <i class="fa fa-truck"></i>
+        <button class="transport-btn">Transportation</button>
+    </div>
+    <div class="monitor">
+        <i class="fa fa-eye"></i>
+        <button class="monitor-btn">Monitoring</button>
+    </div>
+        </div>
+    </div>
+</section>
+<!--End of Service-->
+
+<!--Start of Contact Div-->
+<section id="contact">
+    <div class="contact">
+    <h4>CONTACT</h4>
+   
+    <div class="contact-info">
+        <label>Name:<input type="text" class="fullname" required></label><br><br>
+        <textarea cols="35" rows="4"></textarea><br><br>
+        <button class="submit-btn">Send</button>
+    </div>
+
+    <div class="info">
+        <ul type="none">
+            <li><i class="fa fa-phone"></i>Phone:+233 209 536 413</li>
+            <li><i class="fa fa-envelope"></i>Email:AgroFresh@info.com</li>
+            <li><i class="fa fa-location-dot"></i>Location: Torgbui Tawiah Steet, HO</li>
+        </ul>
+    </div>
+    
+</div></section>
+<!--End of Contact Div-->
+
+<!--Footer-->
+<footer>
+    <div class="footer-list">
+        <ul type="none">
+            <li><a href="#">&#62; About</a></li>
+            <li><a href="#">&#62; Contact</a></li>
+            <li><a href="#">&#62; Services</a></li>
+            <li><a href="#">&#62; Partners</a></li>
+            <li><a href="#">&#62; Terms & Conditions</a></li>
+        </ul>
+    </div>
+    <div class="footer-subscribe">
+        <h6>Subscribe Mail</h6>
+        <form>
+        <input type="text" class="subscribe"/>
+        <button>Send</button>
+        </form>
+    </div>
+    <p><b>AgroFresh &#169; 2022</b></p>
+
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

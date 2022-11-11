@@ -1,0 +1,609 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:aliceblue;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bolder;
+    
+
+}
+
+h1 a{
+    color: green;
+    text-decoration: none;
+}
+
+h1 a:hover{
+    color: darkorange;
+    cursor: pointer;
+}
+
+
+
+.nav{
+    background-color: rgb(180, 242, 180);
+    text-align: center;
+    display: inline-flex;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+
+}
+.nav h1{
+    
+    display: inline-flex;
+    padding-top: 15px;
+    font-size: 45px;
+     
+}
+
+.nav ul{
+    margin-left: 150px;
+}
+
+
+.nav ul li{
+    font-size: 14px;
+    margin: 30px;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: bold;  
+         
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: green;
+    
+}
+
+.nav ul li a:hover{
+    color: darkorange;
+    
+}
+
+.nav form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    
+}
+
+.nav form input{
+    padding: 5px;
+    margin: 20px;
+    border-color: green;
+    border-radius: 2rem;
+    
+    
+}  
+
+.nav form input:hover{
+    border-color: darkorange;
+}
+
+ .nav i{
+    padding: 5px;
+    position: absolute;
+    margin: 10px 20px;
+    border-color: green;
+   
+    color:green;
+    
+}
+
+.nav i:hover{
+    background-color: none;
+    color: darkorange;
+    border: none;
+    cursor: pointer;
+}
+
+.info-nav{
+    background-color: white;
+    padding-top: 90px;
+    display: inline-flex;
+    width: 100%;
+    color: green;
+    font-weight: bolder;
+    justify-content: space-between;
+    position: fixed;
+   
+    
+}
+
+
+.info-nav marquee a{
+    font-size: 15px;
+    display: inline-flex;
+    text-decoration: none;
+    color: green;
+    
+}
+
+
+.slide-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    
+}
+img{
+    vertical-align: middle;
+    height: 500px;
+    width:500px;
+}
+
+.myslides{
+    display: none;
+}
+
+/* prev & next buttons*/
+.prev, .next{
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding-top: 0px;
+    color:  white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease; /*transition of pic*/
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    animation-delay: 0.9s;
+}
+
+/*moving the next buton to right*/
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/*hover on the slide arrows*/
+.prev:hover, .next:hover{
+    color: darkorange;
+}
+
+
+
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+@media only screen and (max-width:300px){
+    .prev, .next, .text{font-size: 11px;}
+}
+
+.about{
+    height: 400px;
+    width: 100%;
+    color: green;
+    background-color:  aliceblue;
+}
+
+.about .about-pic{
+    height: 10%;
+    width: 40%;
+    margin-top: 100px;
+    text-align: center;
+
+}
+
+.about .about-pic img{
+    height: 350px;
+    width: 350px;
+}
+
+.about .about-text{
+    margin-left: 600px;
+    top: -px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    
+}
+
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 30px;
+    margin-top: -50px;
+   
+}
+
+
+.p1{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 20px;
+    
+}
+
+.p2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.about .about-text li{
+    list-style-type: square;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin-top: 20px;
+}
+/*services container*/
+.service{
+    background-color: white;
+    height: 400px;
+    width: 100%;
+    padding-top: 10px;
+    
+    
+}
+
+.service i{
+    color: green;
+  
+}
+
+/*services second div*/
+.service h3{
+    text-align: center;
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.service .service2{
+    display: inline-flex;
+    margin-left: 100px;
+}
+
+
+
+/*buying btn css*/
+.service .shopping{
+   box-sizing: border-box;
+   width: 250px;
+   height: 250px;
+   border: 2px solid;
+   border-color: green;
+   background-color: aliceblue;
+   margin: 10px;
+   border-radius: 0.5rem;
+   
+   
+}
+
+.service .buy-btn{
+    margin-top: 200px;
+    margin-left: 70px;
+    width: 110px;
+    height: 25px;
+    border-radius: 0.5rem;
+    border-color: green;
+    border: none;
+    color:green;
+    font-weight: bold;
+
+}
+
+.service .buy-btn:hover{
+    color: black;
+    background-color: darkorange;
+    cursor: pointer;
+    border: none;
+}
+
+/*selling btn css*/
+.service .selling{
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    border-color: green;
+    background-color: aliceblue;
+    margin-left: 40px;
+    border-radius: 0.5rem;
+    margin-top: 12px;
+ }
+
+
+.service .selling .sell-btn{
+    margin-top: 200px;
+    margin-left: 70px;
+    width: 110px;
+    height: 25px;
+    border-radius: 0.5rem;
+    border-color: green;
+    font-weight: bold;
+    border: none;
+    color:green;
+
+}
+
+.service .selling .sell-btn:hover{
+    color: black;
+    background-color: darkorange;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+/*Transportation service css*/
+.service .transport{
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    border-color: green;
+    background-color: aliceblue;
+    margin-left: 40px;
+    border-radius: 0.5rem;
+    margin-top: 12px;
+ }
+
+
+.service .transport .transport-btn{
+    margin-top: 200px;
+    margin-left: 70px;
+    width: 110px;
+    height: 25px;
+    border-radius: 0.5rem;
+    border-color: green;
+    font-weight: bold;
+    border: none;
+    color:green;
+
+}
+
+.service .transport .transport-btn:hover{
+    color: black;
+    background-color: darkorange;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+
+}
+
+
+/*monitor service css*/
+.service .monitor{
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    border-color: green;
+    background-color: aliceblue;
+    margin-left: 40px;
+    border-radius: 0.5rem;
+    margin-top: 12px;
+ }
+
+
+.service .monitor .monitor-btn{
+    margin-top: 200px;
+    margin-left: 70px;
+    width: 110px;
+    height: 25px;
+    border-radius: 0.5rem;
+    border-color: green;
+    font-weight: bold;
+    border: none;
+    color:green;
+
+}
+
+.service .monitor .monitor-btn:hover{
+    color: black;
+    background-color: darkorange;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+/*start of contact css*/
+.contact{
+    background-color: aliceblue;
+    height: 400px;
+    width: 100%;
+    padding-top: 10px;
+    
+}
+
+
+h4{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 30px;
+    margin-top: 0px;
+    color: green;
+}
+
+.contact-info{
+    box-sizing: border-box;
+    width: 500px;
+    height: 300px;
+    border: 2px solid;
+    border-color: green;
+    background-color: aliceblue;
+    margin-left: 40px;
+    border-radius: 0.5rem;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.contact label{
+    font: bold;
+    color: green;
+    font-size: 20px;
+}
+
+.contact-info .fullname{
+    margin-top: 20px;
+    width: 300px;
+    height: 20px;
+    border-color: green;
+    border-radius: 0.5rem;
+}
+
+.contact-info .fullname:hover{
+    border-color: darkorange;
+}
+
+.contact-info textarea{
+    resize:none;
+    height: 10em;
+    border-radius: 0.5rem;
+    border-color: green;
+    margin-left: 70px;
+    border-width: 2px;
+}
+
+.contact-info textarea:hover{
+    border-color: darkorange;
+}
+
+.contact-info .submit-btn{
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: green;
+    border-radius: 0.7rem;
+    width: 100px;
+    height: 30px;
+    margin-left: 70px;
+    color: green;
+}
+
+
+.contact-info .submit-btn:hover{
+    background-color: darkorange;
+    color:black;
+    border: none;
+}
+
+
+.info{
+    box-sizing: border-box;
+    width: 500px;
+    height: 300px;
+    /*border: 2px solid;*/
+    /*border-color: green;*/
+    background-color: aliceblue;
+    margin-left: 750px;
+    border-radius: 0.5rem;
+    margin-top: -300px;
+    text-align: center;
+    border: none;
+}
+
+.info ul{
+    margin-left: 20px;
+    display: inline-block;
+    line-height: 70px;
+    font-weight: bold;
+    color: green;
+}
+
+footer{
+
+    background-color: rgb(186, 246, 176);
+    height: 210px;
+    width: 100%;
+
+}
+
+footer ul{
+    margin-top: 24px;
+}
+.footer-list{
+    margin-left: 200px;
+    line-height: 35px;
+}
+
+footer a{
+    text-decoration: none;
+    color: green;
+    font-weight:bold;
+}
+
+footer a:hover{
+    color: darkorange;
+
+}
+
+.footer-subscribe{
+    height: 70px;
+    width: 500px;
+    margin-left: 730px;
+    background-color: none;
+    text-align: center;
+    margin-top: -140px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.footer-subscribe h6{
+    font-size: 17px;
+    color: green;
+}
+
+.footer-subscribe input{
+    width:450px;
+    height: 40px;
+    position: relative;
+    border-color: green;
+    border-radius: 0.5rem;
+}
+
+
+footer input:hover{
+    border-color:darkorange;
+}
+
+.footer-subscribe button{
+    position: absolute;
+    margin-right: 10px;
+    padding: 10px 10px;
+    height: 35px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0.1rem;
+}
+
+.footer-subscribe button:hover{
+    color: black;
+    background-color: darkorange;
+}
+
+footer p{
+    margin-top:80px;
+    text-align: center;
+    color: green;
+}
+
